@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 /* ------------- Variables ------------- */
 
@@ -201,13 +203,13 @@ ul {
     padding-bottom: 1.5rem;
 }
 
-.px-5{
+.px-10{
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
 }
 
 .link{
-    color: var(--text-dark);
+    color: var(--text-dark2);
     font-weight: bold;
 }
 
@@ -233,7 +235,7 @@ ul {
 }
 
 .btn-primary:hover{
-    background: var(--bg-gradient-indig0);
+    background: var(--bg-gradient-indigo);
 }
 
 .bg-cover{
@@ -262,8 +264,57 @@ ul {
 }
 
 .w-50{
-    width: 100%;
+    width: 50%;
 }
 
 
 /* ------------- /Global-Classes ------------- */
+
+
+/* ------------- Navigation ------------- */
+
+#nav{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    flex-direction: column;
+}
+
+#nav .collapse{
+    max-height: 0px;
+    overflow-y: hidden;
+    transition: all 0.9s ease;
+}
+
+#nav .collapse ul{
+    flex-direction: column;
+    text-align: center;
+    padding: 0 3rem;
+}
+
+#nav .collapse ul > li{
+    padding: 0 1.5rem;
+    line-height: 3rem;
+    font-size: 1.1em;
+}
+
+#nav .toggle-btn > button{
+    font-size: 2em;
+    position: absolute;
+    right: 0; top: 0;
+    padding: 1rem;
+    color: var(--text-dark2);
+}
+
+#nav .flex-initial ul button{
+    display: none;
+}
+
+.active{
+    max-height: 50vh !important;
+}
+
+
+
+/* ------------- /Navigation ------------- */
