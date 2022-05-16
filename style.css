@@ -270,6 +270,72 @@ ul {
 
 /* ------------- /Global-Classes ------------- */
 
+/* ------------- Media Query------------- */
+
+/* for large screen sm(640px) */
+@media(min-width: 640px){
+    /* .container{
+        max-width: 640px;
+    } */
+    .sm-text-xl{
+        font-size: 3em;
+    }
+}
+
+/* for large screen md(768px) */
+@media(min-width: 768px){
+    .container{
+        max-width: 768px;
+    }
+}
+
+/* for large screen lg(1024px) */
+@media(min-width: 1024px){
+    /* .container{
+        max-width: 1024px;
+    } */
+    #nav .toggle-btn > button{
+        display: none;
+    }
+
+    #nav{
+        flex-direction: row !important;
+    }
+
+    .collapse{
+        max-height: initial !important;
+    }
+
+    .collapse ul{
+        flex-direction: row !important;
+    }
+
+    .active{
+        max-height: 100%;
+    }
+
+    .lg-cols-3{
+        grid-template-columns: repeat(3, minmax(0,1fr));
+    }
+}
+
+/* for large screen xl(1280px) */
+@media(min-width: 1280px){
+    /* .container{
+        max-width: 1280px;
+    } */
+
+    #nav{
+        background: transparent !important;
+    }
+
+    #nav .flex-initial ul button{
+        display: inline-block !important;
+    }
+   
+}
+
+/* ------------- /Media Query------------- */
 
 /* ------------- Navigation ------------- */
 
@@ -278,6 +344,7 @@ ul {
     top: 0; left: 0;
     width: 100%;
     padding: 1rem 1.5rem;
+    background-color: var(--text-light);
     flex-direction: column;
 }
 
@@ -318,3 +385,26 @@ ul {
 
 
 /* ------------- /Navigation ------------- */
+
+
+/* ------------- Banner area Style ------------- */
+#site-main .banner-area{
+    width: 100%;
+    position: relative;
+    background: var(--bg-cover);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    z-index: -99;
+}
+
+#site-main .banner-area .banner-tittle{
+    height: 95vh;
+    padding-top: 16rem;
+}
+/* ------------- /Banner area Style ------------- */
+
+/* ------------- agency area style ------------- */
+#site-main .agency-area{
+    padding: 5em 0;
+}
+/* ------------- /agency area style ------------- */
